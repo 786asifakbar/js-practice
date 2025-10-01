@@ -18,7 +18,6 @@ let userAgeNum6 = Number(userAgeBool5); // converting boolean to number
 let userAgeStr6 = String(userAgeNum6); // converting number to string
 let userAgeBool6 = Boolean(userAgeStr6); // converting string to boolean
 let userAgeNum7 = Number(userAgeBool6); // converting boolean to number
-
 let str = String(userAgeNum); // converting number to string
 
 
