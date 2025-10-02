@@ -1,16 +1,17 @@
-let Str = "Hyder Ali Khan";
-console.log(Str.length);
-console.log(Str.toUpperCase());
-console.log(Str.toLowerCase());
-console.log(Str.slice(0, 5));
-console.log(Str.replace("Hyder", "Ali"));
-console.log(Str.includes("Khan"));
-console.log(Str.split(" ")); // Split by space
+
+let Str = "Hyder Ahmed Ali Khan";
+console.log(Str.length); // check length
+console.log(Str.toUpperCase()); // convert into upper case
+console.log(Str.toLowerCase()); //covert from upper case to lower case
+console.log(Str.slice(0, 5)); //string se makhsoos hissa nikalna 
+console.log(Str.replace("Hyder", "Asif")); // string ko replace karna
+console.log(Str.includes("Khan"));// kiya particular name is string me include hai 
+console.log(Str.split(" ")); // Split by space // convert into array
 console.log(Str.split("")); // Split by each character
-console.log(Str.indexOf("Ali"));
-console.log(Str.charAt(3));
-console.log(Str.startsWith("Hyder"));
-console.log(Str.endsWith("Khan"));
+console.log(Str.indexOf("Ali"));// index batata hai k  konse number par hai 
+console.log(Str.charAt(0)); // charector dekhny k liye k konsi jagha par hai 
+console.log(Str.startsWith("Hyder")); // check given value/name are start from
+console.log(Str.endsWith("khan")); //  check given value/name are end of with
 console.log(Str.repeat(2)); // Repeat the string 2 times
 console.log(Str.trim()); // Remove whitespace from both ends
 console.log(Str.concat(" is a great person.")); // Concatenate strings
@@ -38,3 +39,5 @@ console.log(Str.normalize("NFKC")); // Normalize to NFKC form
 console.log(Str.toString()); // Convert to string (no effect here since it's already a string)
 console.log(String.fromCharCode(72, 121, 100, 101, 114)); // Create a string from Unicode values
 console.log(String.raw`Hyder\nAli`); // Raw string (no escape sequences processed)
+
+
