@@ -1,3 +1,4 @@
+
 let d = new Date();
 console.log(`Year : ${d.getFullYear()}`);  // Year (e.g., 2025)
 console.log(`Month : ${d.getMonth()}`); // Month (0-11) [0 = January, 11 = December]
