@@ -1,32 +1,12 @@
  for(  let i = 0; i < 5; i++  ){
+   if (i === 3) {
+            break; // exit the loop when i is 3
+        }
     console.log("Iteration: " + i);     
- }
-        continue; // skip even numbers
-        }
-        console.log("i: " + i);
-    }
-        console.log("i: " + i);
-    }
-        console.log("i: " + i);
-    }
-        console.log("i: " + i);
-    }
-        console.log("i: " + i);                         
-    }       
-    }
-        console.log("i: " + i);
-    }
-        console.log("i: " + i);
-    }
-        console.log("i: " + i);
-    }
-        console.log("i: " + i);
-    }
-        console.log("i: " + i);                         
-    }       
-    }    32`  log("i: " + i);
-        }
-        console.log("i: " + i);
-    }
-        console.log("i: " + i);`                    
+ 
+
+}       
+     
+    
+    console.log("Loop ended.");                    
 
