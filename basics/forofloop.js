@@ -41,19 +41,19 @@ for (let char of "Hello") {
 			//console.log(`After for of loop : ${y}`); 
 			} 
 			
-			let a = "31523455";  
-            for(const b of a){ 
+			let i = "31523455";  
+            for(const b of i){ 
 			console.log(b); 
 			} 
   
-            let a = 315342343;  
-            for(const b of a){ 
+            let y = 315342343;  
+            for(const b of y){ 
 			console.log(b); 
 			} 
   
   
-			let a = "true";  
-            for(const b of a){ 
+			let d = "true";  
+            for(const b of d){ 
 			console.log(b); 
 			} 
   			
@@ -76,10 +76,7 @@ for (let char of "Hello") {
 			]);
 			for(const [key,value] of map){
 			console.log(key,"=",value);
-			}
-			
-			
-						}
+			};
 			
 			
 			

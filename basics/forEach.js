@@ -1,30 +1,30 @@
 
             // for Each loop it is in modern style used in Object and array.
 
-           <!-- let arr = [
+           let arr = [
 		        "Sindh","Karachi","Pakistan",78100,800,3000
-		    -->];
-			<!-- arr.forEach((item)=> { -->
-			<!-- console.log(item); -->
-			<!-- });		    -->
+		    ];
+			arr.forEach((item)=> { 
+			console.log(item); 
+			});		    
             
 			
-			<!-- let multi =[ -->
-			<!-- ["Name","Number","age"], -->
-			<!-- ["Asif",3153933660, 32], -->
-			<!-- ["fareed",12324234 , 34] -->
-			<!-- ]; -->
-			<!-- multi.forEach((val)=>{ -->
-			 <!-- //console.log(`value is : ${val.join(" ")}`); -->
-			<!-- }); -->
-			<!-- function printMe(item){ -->
-			<!-- //console.log(item); -->
-			<!-- }; -->
-			<!-- multi.forEach(printMe); -->
+			let multi =[ 
+			["Name","Number","age"], 
+			["Asif",3153933660, 32], 
+			["fareed",12324234 , 34] 
+			]; 
+			multi.forEach((val)=>{ 
+			 //console.log(`value is : ${val.join(" ")}`); 
+			}); 
+			function printMe(item){ 
+			//console.log(item); 
+			}; 
+			multi.forEach(printMe); 
 			
-			<!-- multi.forEach((val,index,arr)=>{ -->
-			<!-- console.log(val,index,arr); -->
-			<!-- }); -->
+			multi.forEach((val,index,arr)=>{ 
+			console.log(val,index,arr); 
+			}); 
 			
 			
 			let users = [
