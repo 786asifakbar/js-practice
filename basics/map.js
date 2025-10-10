@@ -169,7 +169,29 @@ console.log(objMap.get(obj1)); // Engineer
 console.log(objMap.get(obj2)); // Designer
 // Engineer
 // Designer
-
 // Checking existence of keys
+console.log(objMap.has(obj1)); // true
+console.log(objMap.has({ name: 'Alice' })); // false (different reference)
+// true
+// false (different reference)
+console.log(objMap.size); // 2 // 2
 
-        
+// Deleting a key-value pair                
+
+// Iterating over keys and values
+for (let key of objMap.keys()) {
+    console.log(key);
+}
+
+for (let value of objMap.values()) {
+    console.log(value);
+}               
+// { name: 'Alice' }
+// { name: 'Bob' }
+// Engineer
+// Designer 
+// { name: 'Alice' }
+// { name: 'Bob' }
+// Engineer
+// Designer
+// Map with objects as keys
