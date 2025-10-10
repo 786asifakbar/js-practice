@@ -1,0 +1,139 @@
+let arr = [1, 2, 3];
+let newArr = arr.map((num) => num * 2);
+console.log(newArr); // [2, 4, 6]
+console.log(arr); // [1, 2, 3]
+
+// Map example  
+
+ let myMap = new Map();
+ myMap.set('a', 1);
+ myMap.set('b', 2);
+ myMap.set('c', 3);
+
+ console.log(myMap); // Map(3) { 'a' => 1, 'b' => 2, 'c' => 3 }
+ console.log(myMap.get('a')); // 1
+ console.log(myMap.has('b')); // true
+ console.log(myMap.size); // 3
+
+ myMap.delete('c');
+ console.log(myMap); // Map(2) { 'a' => 1, 'b' => 2 }
+
+ myMap.clear();
+ console.log(myMap); // Map(0) {}
+ 
+// Map iteration
+ let anotherMap = new Map();
+ anotherMap.set('x', 10);
+ anotherMap.set('y', 20);
+ anotherMap.set('z', 30);
+
+ for (let [key, value] of anotherMap) {
+     console.log(`${key}: ${value}`);
+ }
+// x: 10
+// y: 20
+// z: 30
+
+anotherMap.forEach((value, key) => {
+    console.log(`${key} => ${value}`);
+});
+// x => 10
+// y => 20
+// z => 30
+
+let keys = Array.from(anotherMap.keys());
+let values = Array.from(anotherMap.values());
+console.log(keys);
+
+console.log(values); // ['x', 'y', 'z']
+ // [10, 20, 30]
+// ['x', 'y', 'z']
+// [10, 20, 30]
+
+// Map with objects as keys
+ let objKey1 = { id: 1 };
+ let objKey2 = { id: 2 };
+
+ let objMap = new Map();
+ objMap.set(objKey1, 'Object 1');
+ objMap.set(objKey2, 'Object 2');
+ 
+ console.log(objMap.get(objKey1)); // Object 1
+ console.log(objMap.get(objKey2)); // Object 2
+
+ console.log(objMap.size); // 2
+
+ objMap.delete(objKey1);
+ console.log(objMap.has(objKey1));
+    // false
+    console.log(objMap.size); // 1
+    objMap.clear();
+    console.log(objMap.size); // 0
+// false
+// 1
+// 0
+     
+// Map vs Object
+ let obj = {};
+ obj['key1'] = 'value1';
+ obj['key2'] = 'value2';
+ 
+ console.log(obj);
+    // { key1: 'value1', key2: 'value2' }
+
+    let map = new Map();
+    map.set('key1', 'value1');
+    map.set('key2', 'value2');
+    
+    console.log(map);
+    // Map(2) { 'key1' => 'value1', 'key2' => 'value2' }
+
+    console.log(obj['key1']); // value1
+    console.log(map.get('key1')); // value1
+    
+    console.log(Object.keys(obj));
+    console.log(Array.from(map.keys()));
+    // [ 'key1', 'key2' ]
+    // [ 'key1', 'key2' ]
+    
+    console.log(Object.values(obj));
+    console.log(Array.from(map.values()));
+    // [ 'value1', 'value2' ]
+    // [ 'value1', 'value2' ]
+    
+    delete obj['key1'];
+    map.delete('key1');
+    
+    console.log(obj);
+    console.log(map);
+    // { key2: 'value2' }
+    // Map(1) { 'key2' => 'value2' }
+    
+    obj['key3'] = 'value3';
+    map.set('key3', 'value3');
+    
+    console.log(obj);
+    console.log(map);
+    // { key2: 'value2', key3: 'value3' }
+    // Map(2) { 'key2' => 'value2', 'key3' => 'value3' }
+    
+// {    key2: 'value2', key3: 'value3' }    
+// Map(2) { 'key2' => 'value2', 'key3' => 'value3' }
+// value1
+// value1
+// [ 'key1', 'key2' ]
+// [ 'key1', 'key2' ]
+// [ 'value1', 'value2' ]
+// [ 'value1', 'value2' ]
+// { key2: 'value2' }
+// Map(1) { 'key2' => 'value2' }
+// { key2: 'value2', key3: 'value3' }
+// Map(2) { 'key2' => 'value2', 'key3' => 'value3' }                    
+
+// Summary
+// Maps are collections of key-value pairs where keys can be of any type.
+// They maintain the order of insertion and provide methods for easy manipulation and iteration.
+// Maps are often preferred over plain objects when keys are not strings or when order matters.
+// Maps are collections of key-value pairs where keys can be of any type.
+// They maintain the order of insertion and provide methods for easy manipulation and iteration.
+// Maps are often preferred over plain objects when keys are not strings or when order matters.
