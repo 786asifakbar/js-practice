@@ -54,21 +54,21 @@ console.log(values); // ['x', 'y', 'z']
  let objKey1 = { id: 1 };
  let objKey2 = { id: 2 };
 
- let objMap = new Map();
+ let obj_Map = new Map();
  objMap.set(objKey1, 'Object 1');
  objMap.set(objKey2, 'Object 2');
  
- console.log(objMap.get(objKey1)); // Object 1
- console.log(objMap.get(objKey2)); // Object 2
+ console.log(obj_Map.get(objKey1)); // Object 1
+ console.log(obj_Map.get(objKey2)); // Object 2
 
- console.log(objMap.size); // 2
+ console.log(obj_Map.size); // 2
 
  objMap.delete(objKey1);
- console.log(objMap.has(objKey1));
+ console.log(obj_Map.has(objKey1));
     // false
-    console.log(objMap.size); // 1
+    console.log(obj_Map.size); // 1
     objMap.clear();
-    console.log(objMap.size); // 0
+    console.log(obj_Map.size); // 0
 // false
 // 1
 // 0
@@ -137,3 +137,39 @@ console.log(values); // ['x', 'y', 'z']
 // Maps are collections of key-value pairs where keys can be of any type.
 // They maintain the order of insertion and provide methods for easy manipulation and iteration.
 // Maps are often preferred over plain objects when keys are not strings or when order matters.
+
+// chaning 
+let chainMap = new Map();
+chainMap.set('a', 1)
+        .set('b', 2)
+        .set('c', 3);
+
+console.log(chainMap); // Map(3) { 'a' => 1, 'b' => 2, 'c' => 3 }
+// Map(3) { 'a' => 1, 'b' => 2, 'c' => 3 }
+
+// Initializing a Map with an array of key-value pairs
+let initMap = new Map([
+    ['x', 10],
+    ['y', 20],
+    ['z', 30]
+]);
+
+console.log(initMap); // Map(3) { 'x' => 10, 'y' => 20, 'z' => 30 }
+// Map(3) { 'x' => 10, 'y' => 20, 'z' => 30 }
+
+// Using objects as keys in a Map
+let obj1 = { name: 'Alice' };
+let obj2 = { name: 'Bob' };
+
+let objMap = new Map();
+objMap.set(obj1, 'Engineer');
+objMap.set(obj2, 'Designer');
+
+console.log(objMap.get(obj1)); // Engineer
+console.log(objMap.get(obj2)); // Designer
+// Engineer
+// Designer
+
+// Checking existence of keys
+
+        
