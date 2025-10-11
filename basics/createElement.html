@@ -1,0 +1,102 @@
+  <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document create element</title>
+ </head>
+ <body>
+
+    
+ </body>
+
+<script>
+
+    const newDiv = document.createElement("div");
+    console.log(newDiv);
+    newDiv.innerText = "This is a new div created using createElement";
+    newDiv.style.color = "white";
+    newDiv.style.backgroundColor = "black";
+    newDiv.style.padding = "10px";
+    newDiv.style.margin = "10px";
+    newDiv.style.borderRadius = "5px";
+    document.body.appendChild(newDiv);  
+    // document.body.prepend(newDiv);  // to add element at the top of the body
+    // document.body.insertBefore(newDiv, document.body.childNodes[0]); // to add element at the top of the body
+    // document.body.replaceChild(newDiv, document.body.childNodes[0]); // to replace the first element of the body with newDiv
+    // document.body.removeChild(document.body.childNodes[0]); // to remove the first element of the body
+
+    const newDiv2 = document.createElement("div");
+    newDiv2.innerText = "This is another new div created using createElement";
+    newDiv2.style.color = "white";
+    newDiv2.style.backgroundColor = "black";
+    newDiv2.style.padding = "10px";
+    newDiv2.style.margin = "10px";
+    newDiv2.style.borderRadius = "5px";
+    document.body.appendChild(newDiv2); 
+    document.body.insertBefore(newDiv2, newDiv); // to add newDiv2 before newDiv
+    document.body.removeChild(newDiv); // to remove newDiv  
+    document.body.replaceChild(newDiv2, newDiv); // to replace newDiv with newDiv2
+
+    const newDiv3 = document.createElement("div");
+    newDiv3.innerText = "This is third new div created using createElement";
+    newDiv3.style.color = "white";
+    newDiv3.style.backgroundColor = "black";
+    newDiv3.style.padding = "10px";
+    newDiv3.style.margin = "10px";
+    newDiv3.style.borderRadius = "5px";
+    document.body.appendChild(newDiv3);
+    document.body.insertBefore(newDiv3, newDiv2); // to add newDiv3 before newDiv2
+    document.body.removeChild(newDiv2); // to remove newDiv2
+    document.body.replaceChild(newDiv3, newDiv2); // to replace newDiv2 with newDiv3
+    document.body.replaceChild(newDiv2, newDiv3); // to replace newDiv3 with newDiv2
+    document.body.replaceChild(newDiv, newDiv2); // to replace newDiv2 with newDiv
+    document.body.replaceChild(newDiv2, newDiv); // to replace newDiv with newDiv2
+    document.body.replaceChild(newDiv3, newDiv2); // to replace newDiv2 with newDiv3
+    document.body.replaceChild(newDiv2, newDiv3); // to replace newDiv3 with newDiv2
+    document.body.replaceChild(newDiv, newDiv2); // to replace newDiv2 with newDiv
+    document.body.replaceChild(newDiv2, newDiv); // to replace newDiv with new  Div2
+    document.body.replaceChild(newDiv3, newDiv2); // to replace newDiv2 
+    document.body.replaceChild(newDiv2, newDiv3); // to replace newDiv3 with newDiv2
+    document.body.replaceChild(newDiv, newDiv2); // to replace newDiv2 with newDiv
+    document.body.replaceChild(newDiv2, newDiv); // to replace newDiv with newDiv2
+    document.body.replaceChild(newDiv3, newDiv2); // to replace newDiv2 with newDiv3
+    document.body.replaceChild(newDiv2, newDiv3); // to replace newDiv3 with newDiv2
+    document.body.replaceChild(newDiv, newDiv2); // to replace newDiv2 with newDiv
+    document.body.replaceChild(newDiv2, newDiv); // to replace newDiv with new  Div2
+    document.body.replaceChild(newDiv3, newDiv2); // to replace newDiv2 with newDiv3
+    document.body.replaceChild(newDiv2, newDiv3); // to replace newDiv3 with newDiv2        
+    document.body.replaceChild(newDiv, newDiv2); // to replace newDiv2 with newDiv
+    document.body.replaceChild(newDiv2, newDiv); // to replace newDiv with newDiv2
+    document.body.replaceChild(newDiv3, newDiv2); // to replace newDiv2 with newDiv3
+    document.body.replaceChild(newDiv2, newDiv3); // to replace newDiv3 with newDiv2
+    document.body.replaceChild(newDiv, newDiv2); // to replace newDiv2 with newDiv
+    document.body.replaceChild(newDiv2, newDiv); // to replace newDiv with newDiv2
+    document.body.replaceChild(newDiv3, newDiv2); // to replace newDiv2 with newDiv3
+    document.body.replaceChild(newDiv2, newDiv3); // to replace newDiv3 with newDiv2
+
+
+    document.body.replaceChild(newDiv, newDiv2); // to replace newDiv2 with newDiv
+    document.body.replaceChild(newDiv2, newDiv); // to replace newDiv with newDiv2
+    document.body.replaceChild(newDiv3, newDiv2); // to replace newDiv2 with newDiv3
+    document.body.replaceChild(newDiv2, newDiv3); // to replace newDiv3 with newDiv2
+    document.body.replaceChild(newDiv, newDiv2); // to replace newDiv2 with newDiv
+    document.body.replaceChild(newDiv2, newDiv); // to replace newDiv with newDiv2
+    document.body.replaceChild(newDiv3, newDiv2); // to replace newDiv2 with newDiv3
+    document.body.replaceChild(newDiv2, newDiv3); // to replace newDiv3 with newDiv2
+    document.body.replaceChild(newDiv, newDiv2); // to replace newDiv2 with newDiv
+    document.body.replaceChild(newDiv2, newDiv); // to replace newDiv with new
+    document.body.replaceChild(newDiv3, newDiv2); // to replace newDiv2 with newDiv3
+    document.body.replaceChild(newDiv2, newDiv3); // to replace newDiv3 with newDiv2
+    document.body.replaceChild(newDiv, newDiv2); // to replace newDiv2 with newDiv
+    document.body.appendChild(newDiv); // to append newDiv at the end of the body
+    document.body.appendChild(newDiv2); // to append newDiv2 at the end of the body
+    document.body.appendChild(newDiv3); // to append newDiv3 at the end of the body         
+
+
+
+
+
+</script>
+
+ </html>
