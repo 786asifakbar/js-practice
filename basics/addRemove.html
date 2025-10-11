@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Add/Remove Elements </title>
+
+</head>
+<body>
+         <ul>
+             <li>Javascript</li>
+             
+         </ul>
+
+</body>
+<script>
+    // Create a new list item
+    const newListItem = document.createElement("li");
+    newListItem.innerText = "New Item Added";
+
+    // Append the new list item to the ul
+    document.querySelector("ul").appendChild(newListItem);
+
+    // Remove the first list item
+    const firstListItem = document.querySelector("ul li");
+    document.querySelector("ul").removeChild(firstListItem);
+
+    // Replace the second list item with a new one
+    const secondListItem = document.querySelectorAll("ul li")[1];
+    const replacementItem = document.createElement("li");
+    replacementItem.innerText = "Replaced Item";
+    document.querySelector("ul").replaceChild(replacementItem, secondListItem);
+
+    // Final DOM structure:
+    // - "New Item Added" (appended)
+    // - "Replaced Item" (replaced second item)
+    // - First item removed
+    // - "Item 2" (original second item) is now the first item
+    // - "Item 3" (original third item) is now the second item
+    // - "New Item Added" (appended) is now the third item
+    
+
+    
+      
+     
+
+</script>
+</html>
