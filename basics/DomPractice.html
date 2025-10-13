@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Practice</title>
+</head>
+<body>
+
+    <ul class="fruits">
+        <li class="fruit"> Apple </li>
+        <li class="fruit"> Banana </li>
+        <li class="fruit"> Mango </li>
+        <li class="fruit"> Orange </li>
+        <li class="fruit"> Grapes </li>
+    </ul>
+    
+</body>
+
+<script>
+    const fruits = document.querySelector(".fruits");
+    const fruitColors = ["red", "yellow", "orange", "green", "purple"];
+    const textColors = ["white", "black", "white", "white", "white"];
+
+    for (let i = 0; i < fruits.children.length; i++) {
+        fruits.children[i].style.backgroundColor = fruitColors[i];
+        fruits.children[i].style.color = textColors[i];
+        fruits.children[i].style.fontSize = "24px";
+        fruits.children[i].style.textAlign = "center";
+        fruits.children[i].style.padding = "20px";
+        fruits.children[i].style.borderRadius = "15px";
+        fruits.children[i].style.margin = "10px";
+        fruits.children[i].style.boxShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
+    }  
+    
+    
+    let newFruit = document.createElement("li");
+    newFruit.innerText = "Pineapple";
+    newFruit.className = "fruit";
+    newFruit.style.backgroundColor = "goldenrod";
+    newFruit.style.color = "white";
+    newFruit.style.fontSize = "24px";
+    newFruit.style.textAlign = "center";
+    newFruit.style.padding = "20px";
+    newFruit.style.borderRadius = "15px";
+    newFruit.style.margin = "10px";                 
+    newFruit.style.boxShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
+    fruits.appendChild(newFruit);
+    
+
+
+</script>
+</html>
