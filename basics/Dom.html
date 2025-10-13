@@ -1,107 +1,119 @@
-   <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document Object Module</title>
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Dom Menuplition  </title>
+  
+  </head>
+    <body>
 
-<div class="parent">
-<div class="day"> Monday </div>
-<div class="day">Tuesday</div>
-<div class="day">Wednesday</div>
-<div class="day">Thursday</div>
-</div>
-
-<body>
-<script>
-
-// document.getElementsByClassName("perant")[0].style.color = "red";
-// document.getElementsByClassName("day")[2].style.color = "blue";
-
-const  day = document.querySelector(".parent"); 
-console.log(day.children[0].style.color="red");
-console.log(day.children[2].style.color = "blue");
-console.log(day.children[3].style.color = "green");
-console.log(day.children[1].style.color = "yellow");
-console.log(day.children[1].style.backgroundColor = "black");
-console.log(day.children[0].style.backgroundColor = "pink");
-console.log(day.children[2].style.backgroundColor = "purple");
-console.log(day.children[3].style.backgroundColor = "orange");
-console.log(day.children[0].style.fontSize = "30px");
-console.log(day.children[1].style.fontSize = "30px");
-console.log(day.children[2].style.fontSize = "30px");
-console.log(day.children[3].style.fontSize = "30px");
-console.log(day.children[0].style.fontFamily = "cursive");
-console.log(day.children[1].style.fontFamily = "cursive");
-console.log(day.children[2].style.fontFamily = "cursive");
-console.log(day.children[3].style.fontFamily = "cursive");
-console.log(day.children[0].style.textAlign = "center");
-console.log(day.children[1].style.textAlign = "center");
-console.log(day.children[2].style.textAlign = "center");
-
-console.log(day.children[3].style.textAlign = "center");
-console.log(day.children[0].style.padding = "10px");
-console.log(day.children[1].style.padding = "10px");
-console.log(day.children[2].style.padding = "10px");
-console.log(day.children[3].style.padding = "10px");
-console.log(day.children[0].style.margin = "10px");
-console.log(day.children[1].style.margin = "10px");
-console.log(day.children[2].style.margin = "10px");
-console.log(day.children[3].style.margin = "10px");
-console.log(day.children[0].style.borderRadius = "10px");
-console.log(day.children[1].style.borderRadius = "10px");
-console.log(day.children[2].style.borderRadius = "10px");
-console.log(day.children[3].style.borderRadius = "10px");
-
-for(let i=0; i<day.children.length; i++){
-    day.children[i].style.boxShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
-
-}
-
-console.log(day.firstElementChild)
-console.log(day.lastElementChild)
-console.log(day.childElementCount)      
-console.log(day.children)    
-console.log(day.parentElement)
-console.log(day.nextElementSibling) 
-console.log(day.previousElementSibling)
-console.log(day.hasChildNodes());
-console.log(day.getAttribute("class"));
-console.log(day.setAttribute("id","days"))
-console.log(day.removeAttribute("id"))
-console.log(day.innerHTML)
-console.log(day.innerText)
-console.log(day.textContent)    
-console.log(day.classList)
-console.log(day.className)
-console.log(day.id)
-console.log(day.tagName)
-console.log(day.nodeName)
-console.log(day.nodeType)
-console.log(day.cloneNode(true))
-console.log(day.contains(day.children[0]))
-console.log(day.contains(day.children[1]))
-console.log(day.contains(day.children[2]))
-console.log(day.contains(day.children[3]))
-console.log(day.isConnected)
-console.log(day.style)
-console.log(day.title)
-console.log(day.lang)
-console.log(day.dir)
-console.log(day.hidden)
-console.log(day.tabIndex)
-console.log(day.scrollHeight)
-console.log(day.scrollWidth)
-console.log(day.offsetHeight)
-console.log(day.offsetWidth)        
-console.log(day.clientHeight)
-console.log(day.clientWidth)
-console.log(day.getBoundingClientRect())
-console.log(day.scrollIntoView())                                                                                                                                                                                                                       
+        <ul id="parent"> 
+		<li class="day"> monday </li>
+		<li class="day"> tuesday </li>
+		<li class="day"> wensday </li>
+		<li class="day"> thursday </li>
+		<li class="day"> friday </li>
+		<li class="day"> saturday </li>
+		<li class="day"> sunday </li>
+		
+		
+		</ul>
 
 
+    </body>
+	
+	<script>
+	          
+			  const body = document.querySelector('body');
+			        body.style.backgroundColor = "silver";
+					
+			  const day = document.querySelector(`#parent`)
+			  //console.log(day);
+			  
+			   console.log(day.innerHTML) 
+			   console.log(day.innerText)
+			  
+			       console.log(day.children[0].style.backgroundColor="red")
+			       console.log(day.children[0].style.color="cyan")
+			  
+			       day.children[1].style.backgroundColor="cyan";
+			       day.children[1].style.color ="red";
+			  
+			   day.children[2].style.backgroundColor="green"
+			   day.children[2].style.color = "yellow"
+			  
+			   day.children[3].style.backgroundColor ="#212121"
+			   day.children[3].style.color="white";
 
-</script>
-</body>
+               day.children[5].style.backgroundColor ="#23e453"
+			   day.children[5].style.color="white";
+			
+               day.children[6].style.backgroundColor ="#212e10"
+			   day.children[6].style.color="white";
+              for(let i = 0 ; i <=day.children.length; i++){
+			  day.children[i].style.padding="10px";
+			  day.children[i].style.fontSize = "40px";
+			  day.children[i].style.borderRadius ="50px"
+			  day.children[i].style.textAlign="center";
+			  day.children[i].style.margin="5px"
+              day.children[i].style.boxShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
+			 
+			  if(i == 4){
+			    day.children[i].style.backgroundColor ="blue";
+			    day.children[i].style.color="white";
+			    day.children[i].style.fontFamily ="cursive"
+			  }			 
+			  }
+			  
+
+			   console.log(day.firstElementChild.style.backgroundColor="brown");
+			   console.log(day.lastElementChild.style.color="green");
+			   console.log(day.childElementCount);
+			   console.log(day.children);
+			   console.log(day.parentElement);
+			  //console.log(day.nextElementSibling);
+			  //console.log(day.previousElementSibling);
+			 // console.log(day.hasChildNodes());
+			 // console.log(day.getAttribute("class"));
+			 // console.log(day.setAttribute("id" , "days"));
+			 // console.log(day.removeAttribute("id"));
+			    //console.log(day.innerHTML);
+				//console.log(day.innerText);
+			  //console.log(day.textContent);
+			  //console.log(day.children[0]);
+			  //console.log(day.id);
+			  //console.log(day.className);
+			  //console.log(day.tagName)
+			  //console.log(day.nodeName)
+			  //console.log(day.nodeType);
+			  //console.log(day.cloneNode(true));
+			  //console.log(day.contains(day.children[0]));
+			 // console.log(day.contains(day.children[1]));
+			  //console.log(day.contains(day.children[2]));
+			  //console.log(day.contains(day.children[3]));
+			  //console.log(day.isConnected);
+			  //console.log(day.style);
+			  //console.log(day.title);
+			  //console.log(day.lang);
+			  //console.log(day.dir);
+			  //console.log(day.tabIndex);
+			  //console.log(day.hidden);
+			   console.log(day.scrollHeight)
+			   console.log(day.scrollWidth)
+			   console.log(day.offsetHeight);
+			   console.log(day.clientHeight);
+			   console.log(day.clientWidth);
+			  //console.log(day.getBoundingClientRect())
+			  console.log(day.scrollIntoView)
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+	</script>
 </html>
