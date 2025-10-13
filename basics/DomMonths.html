@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Dom Menuplition  </title>
+  
+  </head>
+    <body>
+
+        <ul class="parent"> 
+		<li class="month"> Jan </li>
+		<li class="month"> feb </li>
+		<li class="month"> mar </li>
+		<li class="month"> apr </li>
+	    <li class="month"> may </li>
+		<!-- <li class="month"> june </li> -->
+		<!-- <li class="month"> july </li> -->
+		
+		</ul>
+		
+		
+
+
+    </body>
+	
+	<script>
+	          
+		const month = document.querySelector(".parent");
+        const aryColor = ["Black","Blue","green","yellow","cyan"];
+		const colors = ["green","yellow","white","red","purple","orange"]
+		
+		for(let s = 0; s< month.children.length; s++){     
+			 month.children[s].style.backgroundColor = aryColor[s];
+			 month.children[s].style.color = colors[s];
+			 month.children[s].style.fontSize ="30px";
+			 month.children[s].style.textAlign ="center";
+			 month.children[s].style.padding ="30px";
+			 month.children[s].style.borderRadius = "30px"
+			 month.children[s].style.margin="10px";
+			 month.children[s].style.boxShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
+			 
+		   }		  
+ 		
+			  
+			  
+	</script>
+</html>
