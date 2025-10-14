@@ -1,0 +1,44 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changing Background</title>
+</head>
+<body>
+    
+	  <h1> Color Changing Scheme </h1>
+	  <button class="button" id="white"> white </button>
+	  <button class="button" id="grey"> grey </button>
+	  <button class="button" id="yellow"> yellow </button>
+	  <button class="button" id="red"> red </button>
+	
+	
+</body>
+
+    <script>
+      
+  const btn = document.querySelectorAll('.button');
+  const body = document.querySelector("body");
+  
+  btn.forEach(function (button){
+  //console.log(button);
+  
+  button.addEventListener('click', function(e){
+  //console.log(e.target);
+  if(e.target.id === 'white'){
+  body.style.backgroundColor = e.target.id;
+  }else if(e.target.id === 'grey'){
+   body.style.backgroundColor = e.target.id;
+  }else if(e.target.id === 'yellow'){
+   body.style.backgroundColor = e.target.id;
+  }else if(e.target.id === 'red'){
+  body.style.backgroundColor = e.target.id;
+  }else{
+  body.style.backgroundColor = "blue";
+  }
+  });
+  });
+    
+    </script>
+</html>
