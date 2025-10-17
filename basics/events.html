@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+<div>
+    <ul>
+        <li><img src="image1.jpg" alt="Image 1"></li>
+        <li><img src="image2.jpg" alt="Image 2"></li>
+        <li><img src="image3.jpg" alt="Image 3"></li>       
+        <li><img src="image4.jpg" alt="Image 4"></li>
+        <li><img src="image5.jpg" alt="Image 5"></li>
+        <li><img src="image6.jpg" alt="Image 6"></li>
+        <li><img src="image7.jpg" alt="Image 7"></li>
+        <li><img src="image8.jpg" alt="Image 8"></li>
+        <li><img src="image9.jpg" alt="Image 9"></li>
+    </ul>
+</div>
+
+
+</body>
+document.querySelectorAll('img').forEach(img => {
+    img.addEventListener('click', () => {
+        alert(`You clicked on ${img.alt}`);
+    });
+});
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+</style>
+</html>
