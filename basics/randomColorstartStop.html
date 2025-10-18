@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Set Timeout Start & Stop</title>
+
+  <style>
+    /* ===== Global Styles ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
+      transition: background-color 1s ease;
+    }
+
+    /* ===== Wrapper Box ===== */
+    #wrapper {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 40px 60px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    #head {
+      font-size: 2.5rem;
+      color: #fff;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+      margin-bottom: 30px;
+      letter-spacing: 2px;
+    }
+
+    /* ===== Buttons ===== */
+    button {
+      border: none;
+      outline: none;
+      font-size: 1.1rem;
+      font-weight: 600;
+      padding: 12px 25px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin: 0 10px;
+    }
+
+    #start {
+      background: linear-gradient(90deg, #00c853, #b2ff59);
+      color: #fff;
+      box-shadow: 0 4px 15px rgba(0, 200, 83, 0.5);
+    }
+
+    #stop {
+      background: linear-gradient(90deg, #ff3d00, #ff9100);
+      color: #fff;
+      box-shadow: 0 4px 15px rgba(255, 61, 0, 0.5);
+    }
+
+    button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    button:active {
+      transform: scale(0.98);
+    }
+
+    /* Glow Animation */
+    @keyframes glow {
+      0% {
+        box-shadow: 0 0 5px #fff;
+      }
+      50% {
+        box-shadow: 0 0 20px #fff;
+      }
+      100% {
+        box-shadow: 0 0 5px #fff;
+      }
+    }
+
+    #head.glow {
+      animation: glow 1.5s infinite;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrapper">
+    <h1 id="head">Start and Stop</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+  </div>
+
+  <script>
+    const head = document.querySelector("#head");
+
+    const randomColor = function () {
+      const hex = "0123456789ABCDEF";
+      let color = "#";
+      for (let i = 0; i < 6; i++) {
+        color += hex[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    };
+
+    let intervalId;
+
+    const startChangingColor = function () {
+      if (!intervalId) {
+        head.classList.add("glow");
+        intervalId = setInterval(changeBgColor, 1000);
+      }
+
+      function changeBgColor() {
+        document.body.style.backgroundColor = randomColor();
+        head.style.color = randomColor();
+      }
+    };
+
+    const stopChangingColor = function () {
+      clearInterval(intervalId);
+      intervalId = null;
+      head.classList.remove("glow");
+    };
+
+    document.querySelector("#start").addEventListener("click", startChangingColor);
+    document.querySelector("#stop").addEventListener("click", stopChangingColor);
+  </script>
+</body>
+</html>
