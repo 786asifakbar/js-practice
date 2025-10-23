@@ -50,31 +50,44 @@ window.addEventListener("visibilitychange", (event) => {
 });
 window.addEventListener("scroll", (event) => {
     console.log("Window scrolled:", event);
-});window.addEventListener("resize", (event) => {
+});
+window.addEventListener("resize", (event) => {
     console.log("Window resized:", event);
-});window.addEventListener("keydown", (event) => {
+});
+window.addEventListener("keydown", (event) => {
     console.log("Key pressed:", event);
-});window.addEventListener("keyup", (event) => {
+});
+window.addEventListener("keyup", (event) => {
     console.log("Key released:", event);
-});window.addEventListener("mousemove", (event) => {
+});
+window.addEventListener("mousemove", (event) => {
     console.log("Mouse moved:", event);
-});window.addEventListener("click", (event) => {
+});
+window.addEventListener("click", (event) => {
     console.log("Window clicked:", event);
-});window.addEventListener("dblclick", (event) => {
+});
+window.addEventListener("dblclick", (event) => {
     console.log("Window double-clicked:", event);
-});window.addEventListener("contextmenu", (event) => {
+});
+window.addEventListener("contextmenu", (event) => {
     console.log("Context menu opened:", event);
-});window.addEventListener("scroll", (event) => {
+});
+window.addEventListener("scroll", (event) => {
     console.log("Window scrolled:", event);
-});window.addEventListener("resize", (event) => {
+});
+window.addEventListener("resize", (event) => {
     console.log("Window resized:", event);
-});window.addEventListener("keydown", (event) => {
+});
+window.addEventListener("keydown", (event) => {
     console.log("Key pressed:", event);
-});window.addEventListener("keyup", (event) => {
+});
+window.addEventListener("keyup", (event) => {
     console.log("Key released:", event);
-});window.addEventListener("mousemove", (event) => {
+});
+window.addEventListener("mousemove", (event) => {
     console.log("Mouse moved:", event);
-});window.addEventListener("click", (event) => {
+}); 
+window.addEventListener("click", (event) => {
     console.log("Window clicked:", event);
 });
 window.addEventListener("dblclick", (event) => {
