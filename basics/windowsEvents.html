@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Table Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8fafc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 70%;
+      background: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 12px 20px;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+    }
+
+    th {
+      background-color: #2563eb;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    tr:hover {
+      background-color: #f1f5f9;
+    }
+  </style>
+</head>
+<body>
+<div  id="insert">
+
+</div>
+  
+
+</body>
+		<script>
+         const insert = document.querySelector("#insert");
+          window.addEventListener("keydown", function(e){
+		    insert.innerHTML = `
+   
+   <div class='color'>
+   <table>
+      <tr>
+        <th>key</th>
+        <th>keycode</th>
+        <th>code</th>
+      </tr>
+      <tr>
+        <td>${e.key === ' ' ? 'space' : e.key}</td>
+        <td>${e.keyCode}</td>
+        <td>${e.code}</td>
+      </tr>
+  </table>
+</div>  
+			
+			`;
+		  });
+
+		</script>
+
+
+</html>
