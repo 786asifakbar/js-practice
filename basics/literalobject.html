@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Objects </title>
+  
+</head>
+<body>
+
+  
+  <script>
+  
+// =====================================
+// 🧠 OBJECT OPERATIONS
+// =====================================
+ 
+// let user = {
+         //   name : "Asif",
+			//email :  "abc@gmail.com",
+			//age : 32, 
+ //};
+ 
+ 
+ //console.log(user);
+ //console.log(user["name"]);
+ 
+ //user.job = "Developer"; 
+ //user.age = 23;
+ //user.name = "Hyder";
+
+//console.log(user);
+
+//delete user.age;
+//console.log(user);
+
+//for(let key in user){
+//console.log(`${key} : ${user[key]}`)
+
+//}  
+
+//console.log("keys : ", Object.keys(user));
+//console.log("values : ", Object.values(user));
+//console.log("marge print : ", Object.keys(user) ,Object.values(user));
+//console.log("Entries : " , Object.entries(user));
+
+//let additionalInfo = {
+  //                   Hobby : "Coding",
+	//				 Countery : "Pakistan"
+//}
+					 
+//let margedObj = {...user , ...additionalInfo}; // marge objects
+//console.log(margedObj);
+
+//user.name = "Fareed Ahmed"
+//let clonedUser = {...user};
+//console.log(clonedUser);
+
+//console.log("Has age : " , "age" in user);
+//console.log("Has Job : " , "job" in user);
+//console.log("countery is : " , "Countery" in additionalInfo);
+
+//console.log(" checking Keys : " , user.hasOwnProperty("sallery"))
+//console.log(user);
+
+//user.sallery = 100000;
+//console.log("checking sallery : " , user.hasOwnProperty("sallery"));
+
+//Object.freeze(user);
+//console.log("after freeze checking value : " , user);
+//user.sallery = 150000;
+//console.log("After Updating values " , user);
+
+
+//let jsonString = JSON.stringify(user);
+//console.log(jsonString);
+//for(let key in jsonString)
+//console.log(`${key} : ${jsonString[key]}`);
+
+
+//let parsedObject = JSON.parse(jsonString);
+//console.log("parsed :" , parsedObject);
+
+//let isUser = typeof  === "Object" && user !== null;
+//console.log(isUser);	
+
+	
+		//let parsedObject = JSON.parse(jsonString);
+        //console.log("parsed:", parsedObject);
+
+   //let isUser = typeof parsedObject === "object" && parsedObject !== null;
+   //console.log(isUser);
+   
+   
+   
+   
+   //=================================================================================
+   
+   let person = {
+               id :1 ,
+			   Asim : "Asif Ali",
+			   email: "asif@gmail.com",
+			   isActive: true,
+			   roles: ["admin" , "editor"],
+			   profile: {
+			   age: 23,
+			   countery: "Pak",
+			   
+			   },
+   };
+   
+   console.log(person["profile"]);
+   
+   console.log(" has Sallery : " , person.hasOwnProperty("sallery"));
+   console.log(" has roles: " , person.hasOwnProperty("roles"));
+   console.log("has profile :" , person.hasOwnProperty("profile"));
+   
+   console.log(" Accesing properties :", person.name);
+   console.log(person.profile.age);
+   console.log(person.id);
+   console.log(person.roles[1]);
+   
+   person.lastLogin = "12,10,2025";
+   console.log(person);
+   
+   person.isActive = false;
+   console.log(person);
+   
+   delete person.email;
+   console.log(person);
+   
+   for(let key in person){
+   console.log(`${key} , ${person[key]}`);
+   }
+   
+   console.log("objects :" , Object.keys(person));
+   console.log("values : " , Object.values(person));
+   console.log("Enteries : " , Object.entries(person));
+   
+   let AddInfo = {
+               hobby : "Listen Songs",
+			   choice : "Classical Songs",
+			}
+			
+  let mergedObj = {...person , ...AddInfo};
+  console.log(" After Marge Obj :" , mergedObj);
+
+
+  let cloneObj = {...person};
+   console.log(cloneObj);
+
+console.log("has existence :" , "id" in person);
+console.log("has existence :" , person.hasOwnProperty("profile.age"));   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+			 
+					 
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+console.log(typeof user);
+  
+  
+  
+  
+  
+  </script>
+
+</body>
+</html>
